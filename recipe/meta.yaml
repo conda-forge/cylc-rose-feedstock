@@ -20,8 +20,8 @@ requirements:
     - pip
   run:
     - python
-    - metomi-rose >=2.0b1
-    - cylc-flow >=8.0b0
+    - metomi-rose >=2.0b2
+    - cylc-flow >=8.0b2
 
 test:
   imports:
