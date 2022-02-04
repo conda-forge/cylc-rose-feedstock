@@ -10,16 +10,18 @@ source:
   sha256: b2abd6c2202dca30f8912f71ab399592c3bf0633fb812f6fefe5b10e31cfa48e
 
 build:
-  number: 0
-  skip: true  # [py<37 or not unix]
+  number: 1
+  noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python
+    - __unix
+    - python >=3.7
     - pip
   run:
-    - python
+    - __unix
+    - python >=3.7
     - metomi-rose-base ==2.0b3
     - cylc-flow-base ==8.0b3
 
