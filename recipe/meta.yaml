@@ -1,5 +1,5 @@
 {% set name = "cylc-rose" %}
-{% set version = "1.0.2" %}
+{% set version = "1.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0d1ac63eb3005a5d76011e13ea29e1b173788698e9365491e1ca6f296c02019c
+  sha256: 0e6f97c2e9b6192772b5c1f14f44f490d70319ceb92634485412e1dc54466dc3
 
 build:
   number: 0
