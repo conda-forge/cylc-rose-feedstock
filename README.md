@@ -1,11 +1,11 @@
-About cylc-rose
-===============
+About cylc-rose-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cylc-rose-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/cylc/cylc-rose
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cylc-rose-feedstock/blob/main/LICENSE.txt)
 
 Summary: Cylc Rose is the bridge between Rose suite configurations and Cylc workflows.
 
