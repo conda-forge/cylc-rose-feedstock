@@ -22,8 +22,8 @@ requirements:
   run:
     - __unix
     - python >=3.7
-    - metomi-rose-base >=2.0,<2.1
-    - cylc-flow-base >=8.1,<8.2
+    - metomi-rose-base >=2.1,<2.2
+    - cylc-flow-base >=8.2,<8.3
     - metomi-isodatetime
     - jinja2
 
