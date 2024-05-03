@@ -23,7 +23,7 @@ requirements:
     - __unix
     - python >=3.7
     - metomi-rose-base >=2.1,<2.3
-    - cylc-flow-base >=8.2,<8.3
+    - cylc-flow-base >8.2.5,<8.3
     - metomi-isodatetime
     - ansimarkup
     - jinja2
@@ -35,6 +35,7 @@ test:
     - metomi.rose
   commands:
     - PAGER=cat rose stem --help
+    - pip check
 
 about:
   home: https://github.com/cylc/cylc-rose
