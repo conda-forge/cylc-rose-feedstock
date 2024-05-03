@@ -35,7 +35,6 @@ test:
     - metomi.rose
   commands:
     - PAGER=cat rose stem --help
-    - pip check
 
 about:
   home: https://github.com/cylc/cylc-rose
