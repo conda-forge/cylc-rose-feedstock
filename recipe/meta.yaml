@@ -6,23 +6,23 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: d215e2b58fabde66a82f131088b8a3e5add7fab82b226a0b7aa3cc2079ff62e9
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --ignore-installed
 
 requirements:
   host:
     - __unix
-    - python >=3.7
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
     - __unix
-    - python >=3.7
+    - python >={{ python_min }}
     - metomi-rose-base >=2.3,<2.4
     - cylc-flow-base >8.3.5,<8.4
     - metomi-isodatetime
@@ -30,6 +30,8 @@ requirements:
     - jinja2
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - cylc.flow
     - cylc.rose
