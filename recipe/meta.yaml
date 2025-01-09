@@ -1,5 +1,5 @@
 {% set name = "cylc-rose" %}
-{% set version = "1.4.2" %}
+{% set version = "1.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: d215e2b58fabde66a82f131088b8a3e5add7fab82b226a0b7aa3cc2079ff62e9
+  sha256: 24f2e484c13b707ecd6c6525bd1114a6ecc311a4a750c8c3bfc9d17ef8fd4a13
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --ignore-installed
 
@@ -23,8 +23,8 @@ requirements:
   run:
     - __unix
     - python >={{ python_min }}
-    - metomi-rose-base >=2.3,<2.4
-    - cylc-flow-base >8.3.5,<8.4
+    - metomi-rose-base >=2.4,<2.5
+    - cylc-flow-base >=8.4,<8.5
     - metomi-isodatetime
     - ansimarkup
     - jinja2
