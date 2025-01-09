@@ -23,8 +23,8 @@ requirements:
   run:
     - __unix
     - python >={{ python_min }}
-    - metomi-rose-base >=2.3,<2.4
-    - cylc-flow-base >8.3.5,<8.4
+    - metomi-rose-base >=2.4,<2.5
+    - cylc-flow-base >=8.4,<8.5
     - metomi-isodatetime
     - ansimarkup
     - jinja2
