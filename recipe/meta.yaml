@@ -1,13 +1,13 @@
 {% set name = "cylc-rose" %}
-{% set version = "1.7.2" %}
+{% set version = "1.8.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/fb/b7/b0595e10bee032c73e24909623ff359e423aefb76c35be1c2e51bb147af5/cylc_rose-{{ version }}.tar.gz
-  sha256: ec2ddcb410d65d233743e5646d0aa360bef7ff28aa89eac111a2f4365efccade
+  url: https://files.pythonhosted.org/packages/05/f1/fba9e533bf61d628bd3f7737481d17846e3266891dc06071bf2d64f15b5a/cylc_rose-{{ version }}.tar.gz
+  sha256: 1f9b4c4439f45cf0caf8a237130ce5e2de16e730a8d456c0b2d4a6aec8b30fbf
 
 build:
   number: 0
